@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Floppy Plane</title>
+
+<style>
+  body {
+    margin: 0;
+    background: #0f172a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  canvas {
+    margin-top: 20px;
+    border-radius: 16px;
+    background: #70c5ce;
+    width: 90vw;
+    max-width: 720px;
+    height: auto;
+  }
+
+  button {
+    margin-top: 12px;
+    padding: 10px 24px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #22c55e;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+
+  button:hover {
+    background: #16a34a;
+  }
+
+  button:active {
+    transform: scale(0.97);
+  }
+
+  #score {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+</style>
+</head>
+
+<body>
+
+<canvas id="game" width="720" height="960"></canvas>
+<button id="startBtn">START</button>
+<div id="score">0</div>
+
+<script src="game.js"></script>
+</body>
+</html>
